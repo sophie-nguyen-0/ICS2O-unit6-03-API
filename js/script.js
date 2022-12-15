@@ -15,9 +15,7 @@ if (navigator.serviceWorker) {
 
 const checkWeather = async (URLAddress) => {
   try {
-    
-  }
-  catch (error) {
+  } catch (error) {
     console.log(error)
   }
 }
