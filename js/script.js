@@ -19,13 +19,8 @@ const checkWeather = async (URLAddress) => {
     const data = await result.json()
     console.log(data)
     document.getElementById("api-weather").innerHTML =
-      '<img src="' + 
-      jsonData.url + 
-      '" alt="API image" class="center" ' +
-      '>'
-      
+      '<img src="' + jsonData.url + '" alt="API image" class="center" ' + ">"
   } catch (error) {
     console.log(error)
   }
 }
-
