@@ -12,3 +12,12 @@ if (navigator.serviceWorker) {
     scope: "/ICS2O-unit6-03-API/",
   })
 }
+
+const checkWeather = async (URLAddress) => {
+  try {
+    
+  }
+  catch (error) {
+    console.log(error)
+  }
+}
