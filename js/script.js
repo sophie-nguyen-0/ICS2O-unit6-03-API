@@ -15,7 +15,9 @@ if (navigator.serviceWorker) {
 
 const checkWeather = async (id) => {
   try {
-    const result = await fetch('http://api.openweathermap.org/data/2.5/weather?q=London')
+    const result = await fetch(
+      "http://api.openweathermap.org/data/2.5/weather?q=London"
+    )
     const data = await result.json()
     console.log(data)
     document.getElementById("api-weather").innerHTML =
