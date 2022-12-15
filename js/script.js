@@ -12,4 +12,3 @@ if (navigator.serviceWorker) {
     scope: "/ICS2O-unit6-03-API/",
   })
 }
-
