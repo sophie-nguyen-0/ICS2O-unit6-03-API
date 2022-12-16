@@ -20,7 +20,7 @@ const checkWeather = async (URLAddress) => {
     console.log(data)
     document.getElementById("api-weather-icon").innerHTML =
       '<img src="' +
-      "http://openweathermap.org/img/wn/" +
+      "https://openweathermap.org/img/wn/" +
       data.weather[0].icon +
       "@2x.png" +
       '" alt="API image" class="center" ' +
