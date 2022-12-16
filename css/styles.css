@@ -25,11 +25,11 @@ body {
   background-color: #ffd6ea;
 }
 
-img{
+img {
   display: block;
   margin: auto;
 }
 
-#api-weather{
+#api-weather {
   text-align: center;
 }

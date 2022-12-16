@@ -35,7 +35,11 @@ const checkWeather = async (URLAddress) => {
       (data.main.temp - 273.15).toFixed(2) +
       " feels like: " +
       (data.main.feels_like - 273.15).toFixed(2) +
-      "</h4>" +'<br>'+'<h4>wind speed: '+data.wind.speed+'</h4>'
+      "</h4>" +
+      "<br>" +
+      "<h4>wind speed: " +
+      data.wind.speed +
+      "</h4>"
   } catch (error) {
     console.log(error)
   }
