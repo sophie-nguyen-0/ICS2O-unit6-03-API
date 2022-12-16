@@ -18,9 +18,15 @@ const checkWeather = async (URLAddress) => {
     const result = await fetch(URLAddress)
     const data = await result.json()
     console.log(data)
-    document.getElementById("api-weather").innerHTML =
-      '<img src="' + jsonData.url + '" alt="API image" class="center" ' + ">"
+    document.getElementById('api-weather-icon').innerHTML = '<img src="' + 
+      "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png" + 
+      '" alt="API image" class="center" ' +
+      '>' 
+    document.getElementById('api-weather').innerHTML = '<h3>' + data.weather[0].description +'</h3>'
   } catch (error) {
     console.log(error)
   }
 }
+
+checkWeather("https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5")
+
