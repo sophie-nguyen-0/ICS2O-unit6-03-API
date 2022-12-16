@@ -5,7 +5,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-unit6-03-API/sw.js", {
